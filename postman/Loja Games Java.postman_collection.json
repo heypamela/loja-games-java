@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "91bbc87c-6e3c-402a-8937-7c2560926199",
+		"name": "Loja Games Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17052250",
+		"_collection_link": "https://red-robot-265894.postman.co/workspace/Cursos~51258a32-4c36-490b-bf72-cc84484ca343/collection/17052250-91bbc87c-6e3c-402a-8937-7c2560926199?action=share&source=collection_link&creator=17052250"
+	},
+	"item": [
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/produtos"
+					},
+					"response": []
+				},
+				{
+					"name": "Apagar Produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/produtos/delete/4"
+					},
+					"response": []
+				},
+				{
+					"name": "GetId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/produtos/2"
+					},
+					"response": []
+				},
+				{
+					"name": "GetNome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/produtos/produto/Pl"
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"The Legend of Zelda\",\n    \"descricao\": \"Nova aventura no mundo aberto de Hyrule\",\n    \"preco\": \"2500.00\",\n    \"estoque\": 7,\n    \"categoria\": {\n        \"id\": 2\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/produtos"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Nintendo Switch OLED\",\n    \"descricao\": \"Console híbrido com tela OLED vibrante e com jogos icônicos da Nintendo\",\n    \"preco\": \"6500.00\",\n    \"estoque\": 100,\n    \"categoria\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/produtos"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/categorias"
+					},
+					"response": []
+				},
+				{
+					"name": "Apagar Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/categorias/delete/3"
+					},
+					"response": []
+				},
+				{
+					"name": "GetId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/categorias/1"
+					},
+					"response": []
+				},
+				{
+					"name": "GetNome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/categorias/categoria/Jogos"
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Gift Cards\",\n    \"descricao\": \"Créditos digitais para plataformas como PlayStation, Xbox e Steam\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/categorias"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"nome\": \"Gift Cards - Presentes\",\n    \"descricao\": \"Créditos digitais para plataformas como: PlayStation, Xbox, Steam, entre outros\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/categorias"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
