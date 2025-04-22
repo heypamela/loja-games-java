@@ -46,11 +46,6 @@ Este é um projeto backend desenvolvido em **Java com Spring Boot**, que simula 
 - Uma `Categoria` pode ter vários `Produtos`
 - Um `Produto` pertence a apenas uma `Categoria`
 
-```java
-@OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
-private List<Produto> produtos;
-
-
 ## 🧪 Testes com Insomnia/Postman
 
 Um arquivo .json com as requisições já prontas está disponível na pasta postman.
